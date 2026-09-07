@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+backend/model.pkl
+*.log
+.env.*
+!.env.example
+.pytest_cache/

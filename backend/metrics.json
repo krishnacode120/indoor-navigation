@@ -1,0 +1,85 @@
+{
+  "scans": 960,
+  "locations": 80,
+  "ap_count": 8,
+  "train_scans": 720,
+  "test_scans": 240,
+  "evaluation": "25% held-out locations; scaler fitted on training only",
+  "models": {
+    "knn": {
+      "mean_error_m": 2.597,
+      "median_error_m": 2.0,
+      "p90_error_m": 4.9,
+      "samples": [
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            8.96,
+            2.72
+          ]
+        },
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            8.0,
+            0.0
+          ]
+        },
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            9.53,
+            5.42
+          ]
+        }
+      ]
+    },
+    "rf": {
+      "mean_error_m": 2.258,
+      "median_error_m": 2.061,
+      "p90_error_m": 3.884,
+      "samples": [
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            9.9,
+            5.51
+          ]
+        },
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            8.32,
+            0.84
+          ]
+        },
+        {
+          "actual": [
+            10,
+            0
+          ],
+          "predicted": [
+            13.02,
+            4.42
+          ]
+        }
+      ]
+    }
+  },
+  "floor_accuracy": 1.0
+}

@@ -1,0 +1,51 @@
+:root { font-family: Inter, "Segoe UI", sans-serif; color: #22353d; background: #f0f4f6; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .5; }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #6fbbdc; outline-offset: 3px; }
+main { max-width: 1600px; margin: auto; }
+.topbar { background: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 25px 34px; border-bottom: 1px solid #d8e2e6; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand-icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 8px; color: white; background: #117e71; }
+h1 { font-size: 25px; margin: 0; font-weight: 650; line-height: 1.2; }
+h2 { font-size: 16px; font-weight: 650; margin: 0; }
+p { line-height: 1.5; }
+.brand p, .map-toolbar p { color: #73868f; font-size: 12px; margin: 5px 0 0; }
+.connection { display: flex; align-items: center; gap: 8px; font-size: 12px; white-space: nowrap; }
+.connection > span { width: 7px; height: 7px; border-radius: 50%; }
+.online { background: #11907a; }.offline { background: #cf4964; }
+.icon-button { width: 30px; height: 30px; border: none; background: transparent; color: #617a84; padding: 5px; }
+.icon-button svg { width: 20px; height: 20px; }
+.workspace { display: grid; grid-template-columns: 310px minmax(0,1fr); }
+aside { background: white; padding: 26px 24px; border-right: 1px solid #d8e2e6; min-width: 0; }
+.section-heading { display: flex; gap: 10px; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.section-heading > span { font-size: 11px; color: #778a92; }
+.tag { background: #eef5f8; padding: 5px 7px; border-radius: 4px; }
+aside > label { display: grid; gap: 8px; margin: 19px 0; font-size: 12px; font-weight: 600; color: #5c717c; }
+select, textarea { width: 100%; min-width: 0; background: #fbfcfd; color: #243c47; border: 1px solid #d2dee4; border-radius: 5px; padding: 11px 8px; font-size: 12px; }
+textarea { resize: vertical; }
+.primary { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px; border: 0; border-radius: 5px; background: #117e71; color: white; font-size: 13px; font-weight: 650; }
+.primary:hover { background: #0b6a5f; }
+.checks { display: grid; gap: 12px; margin-top: 20px; }
+.checks label, .map-legend label { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+input[type="checkbox"] { width: 15px; height: 15px; margin: 0; accent-color: #117e71; }
+.divider { border-top: 1px solid #e2e9ed; margin-top: 25px; }
+.position { margin: 24px 0 0; display: grid; gap: 15px; font-size: 12px; }
+.position div { display: flex; justify-content: space-between; gap: 10px; }.position dt { color: #7a8b93; }.position dd { margin: 0; font-weight: 600; text-align: right; }
+.route-detail { margin-top: 24px; padding-top: 20px; border-top: 1px solid #e2e9ed; }
+.route-detail > strong { font-size: 28px; color: #1277a6; margin-right: 12px; }.route-detail span, .route-detail p, details { font-size: 12px; }.route-detail p { overflow-wrap: anywhere; }summary { cursor: pointer; }
+.map-area { padding: 26px 30px; min-width: 0; }
+.map-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.segments { display: flex; background: #e4ebef; padding: 3px; border-radius: 5px; flex-shrink: 0; }
+.segments button { border: none; background: transparent; padding: 9px 12px; font-size: 12px; color: #69808c; border-radius: 3px; }.segments .active { background: white; color: #1c4656; box-shadow: 0 1px 3px #bbc8ce; }
+.floor-map { display: block; width: 100%; aspect-ratio: 780 / 510; height: auto; margin: 16px 0 0; }
+.empty-map { min-height: 380px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; color: #728892; }.empty-map button { padding: 10px 20px; border: 1px solid #bdcfd7; background: white; border-radius: 4px; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; padding: 5px 10px 24px; font-size: 11px; color: #647f8b; }.map-legend span { display: flex; align-items: center; gap: 6px; }.map-legend label { margin-left: auto; }.map-legend i { width: 8px; height: 8px; border-radius: 50%; }.you { background: #0c8673; }.target { background: #d45468; }.path { background: #167cbb; }
+.signal-section { border-top: 1px solid #d5e0e5; padding-top: 22px; }.signal-section .section-heading { margin-bottom: 16px; }
+.signals { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }.signal { background: white; padding: 13px; border-radius: 5px; border: 1px solid #dce6ea; min-width: 0; }.signal > div:first-child { display: flex; justify-content: space-between; gap: 5px; flex-wrap: wrap; font-size: 11px; }.signal span { color: #82959d; }.meter { height: 4px; background: #edf1f3; margin-top: 12px; }.meter i { display: block; background: #38a899; height: 100%; transition: width .2s; }
+footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding: 25px 34px; border-top: 1px solid #d8e2e6; background: white; }footer div { display: grid; gap: 6px; }footer strong { font-size: 20px; font-weight: 650; }footer span { font-size: 11px; color: #81949d; }.footer-label { color: #2e6575; font-weight: 650; }.evaluation { text-align: right; line-height: 1.6; }
+.error { padding: 14px 28px; color: #8d233d; background: #fff0f2; border-bottom: 1px solid #efc4ce; font-size: 13px; overflow-wrap: anywhere; }
+@media(max-width:1000px) { .workspace { grid-template-columns: 280px minmax(0,1fr); }.map-area { padding: 24px 16px; }.signals { grid-template-columns: repeat(2,minmax(0,1fr)); }.topbar { padding: 22px; } }
+@media(max-width:700px) { .workspace { grid-template-columns: 1fr; }.topbar { align-items: flex-start; flex-direction: column; gap: 15px; }h1 { font-size: 23px; }aside { border-right: 0; border-bottom: 1px solid #d8e2e6; }.map-area { padding: 24px 12px; }.map-legend label { margin-left: 0; }.map-toolbar { align-items: flex-start; }.map-toolbar h2 { font-size: 14px; }.segments button { padding: 8px; }footer { padding: 24px; justify-content: flex-start; }.floor-map { min-height: 230px; } }
